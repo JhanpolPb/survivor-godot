@@ -1,5 +1,7 @@
 # Survivor
 
+**[▶ Jugar en el navegador](https://jhanpolpb.github.io/survivor-godot/)**
+
 Juego estilo *Vampire Survivors* hecho en **Godot 4** con **GDScript**. No usa imágenes: todo se dibuja con formas por código.
 
 ## Cómo jugar
@@ -56,6 +58,8 @@ scripts/
 - **Nueva mejora de estadística:** añade una entrada a `STAT_UPGRADES` en `upgrades.gd` y su caso en `player.apply_stat()`.
 
 ## Publicar en la web
+
+Cada push a `main` exporta y publica el juego solo en GitHub Pages (`.github/workflows/deploy-web.yml`). Los pasos de abajo son para exportarlo a mano (por ejemplo, para itch.io).
 
 El proyecto ya usa el renderizador **Compatibility** (WebGL 2), que es el que necesita la exportación web. Por eso es GDScript y no C#: Godot 4 no exporta proyectos C# a la web.
 
